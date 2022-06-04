@@ -1,0 +1,45 @@
+<html lang="">
+<head>
+<meta charset="UTF-8">
+<title>Grover Simulation API</title>
+<style type="text/css">
+.board {
+    width: 2000px;
+    height: 2000px;
+    margin: 20px auto;
+    border: 20px solid #333;
+    text-align: center;
+}
+.grey, .white {
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.grey small, .white small {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+.grey {
+    background-color: #B3B3B3;
+}
+.white {
+    background-color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="board">
+{% for i in range(50) %}
+    {% for j in range(50) %}
+        <div class="{{ toggle(i, j) }}">
+            {{ board[i][j].html_icon|safe }}<br><small>{{ board[i][j].direction }}</small>
+        </div>
+    {% endfor %}
+{% endfor %}
+</div>
+</body>
+</html>

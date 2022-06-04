@@ -3,9 +3,9 @@ class Robot:
     def __init__(self, row, column, direction):
         self.row = row  # row
         self.column = column  # column
-        self.taken = False
         self.name = "R"
         self.direction = direction
+        self.html_icon = "&#129302;"
 
     def turn_left(self):
         if self.direction == "N":
@@ -27,8 +27,6 @@ class Robot:
         else:
             self.direction = "N"
 
-    def attack(self):
-        pass
 
 
 

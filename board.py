@@ -17,5 +17,9 @@ class Board:
             tmp_str = "|"
             for j in self.board[i]:
                 if j is None:
-                    tmp_str += "   |"
+                    tmp_str += "    |"
+                elif j.name == "D":
+                    tmp_str += (" " + str(j.name) + "  |")
+                else:
+                    tmp_str += (" " + str(j.name) + str(j.direction) + " |")
             print(tmp_str)
