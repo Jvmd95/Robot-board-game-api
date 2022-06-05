@@ -1,2 +1,6 @@
-fastapi~=0.78.0
-pydantic~=1.9.1
+fastapi==0.78.0
+pydantic==1.9.1
+pytest==7.1.2
+uvicorn
+requests
+jinja2
