@@ -1,4 +1,4 @@
-# Grover Coding Challenge - Robots vs Dinosaurs API
+# Robots vs Dinosaurs API
 
 This a simple python-based API that simulates a board game of robots vs dinosaurs.
 
